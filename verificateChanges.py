@@ -12,11 +12,8 @@ def verify(s):
             return False
     return True
 
-
-
 if __name__ == '__main__':
     programOutput = ""
-
     for d in dirs:
         if os.path.isdir(os.path.join(d, ".git")):
             subprocess.run(["git", "add", "."], cwd=d)
